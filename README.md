@@ -14,7 +14,7 @@ Modified version of: [NvChad](https://github.com/NvChad/NvChad)
 ![nvim](/images/code1.png)
 ![nvim](/images/code2.png)
 
-#### My wallpaer
+#### My wallpaper:
 ![My wallpaper](/images/wallpaper.png)
 
 ----
