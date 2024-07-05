@@ -8,8 +8,8 @@ Modified version of: [NvChad](https://github.com/NvChad/NvChad)
 ----
 ## Gallery ✨
 
-![Cheatsheet](/images/cheatsheet.png)
 ![Iterm](/images/terminal.png)
+![Cheatsheet](/images/cheatsheet.png)
 ![Neotree](/images/neotree.png)
 ![nvim](/images/code1.png)
 ![nvim](/images/code2.png)
