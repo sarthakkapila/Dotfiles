@@ -1,7 +1,7 @@
 <h1 id="header" align="center">Neovim Config 🌃</h1>
-----
+
 <div align="center">
-----
+
 Modified version of: [NvChad](https://github.com/NvChad/NvChad)
 </div>
 
