@@ -1,18 +1,18 @@
 <h1 id="header" align="center">Neovim Config 🌃</h1>
-
+----
 <div align="center">
-
+----
 Modified version of: [NvChad](https://github.com/NvChad/NvChad)
 </div>
 
 ----
 ## Gallery ✨
 
-![Neotree](/images/neotree.png)
+![Cheatsheet](/images/cheatsheet.png)
 ![Iterm](/images/terminal.png)
+![Neotree](/images/neotree.png)
 ![nvim](/images/code1.png)
 ![nvim](/images/code2.png)
-![Cheatsheet](/images/cheatsheet.png)
 
 #### My wallpaer
 ![My wallpaper](/images/wallpaper.png)
