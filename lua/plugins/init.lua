@@ -7,7 +7,25 @@ return {
       require "configs.conform"
     end,
   },
-
+  {
+    "Exafunction/codeium.vim",
+    event = "BufEnter",
+    config = function()
+      -- Change '<C-g>' here to any keycode you like.
+      vim.keymap.set("i", "<C-g>", function()
+        return vim.fn["codeium#Accept"]()
+      end, { expr = true })
+      vim.keymap.set("i", "<c-;>", function()
+        return vim.fn["codeium#CycleCompletions"](1)
+      end, { expr = true })
+      vim.keymap.set("i", "<c-,>", function()
+        return vim.fn["codeium#CycleCompletions"](-1)
+      end, { expr = true })
+      vim.keymap.set("i", "<c-x>", function()
+        return vim.fn["codeium#Clear"]()
+      end, { expr = true })
+    end,
+  },
   -- LSP configuration with nvim-lspconfig
   {
     "neovim/nvim-lspconfig",
@@ -94,22 +112,39 @@ return {
 
   -- Transparent background
   {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
+    "xiyaowong/nvim-transparent",
     config = function()
-      require("tokyonight").setup({
-        style = "night",
-        transparent = true,
-        styles = {
-          sidebars = "transparent",
-          floats = "transparent",
-        },
-      })
-      vim.cmd[[colorscheme tokyonight]]
+      require("transparent").setup {
+        enable = true,
+      }
     end,
-  }
+  },
 
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+    end,
+  },
+  {
+    "rcarriga/nvim-dap-ui",
+    dependencies = { "mfussenegger/nvim-dap" },
+    config = function()
+      require("dapui").setup()
+    end,
+  },
+  {
+    "neoclide/coc.nvim",
+    branch = "release",
+    config = function()
+      vim.g.coc_global_extensions = {
+        "coc-json",
+        "coc-tsserver",
+        "coc-solidity",
+        "coc-rust-analyzer",
+      }
+    end,
+  },
   -- Treesitter for improved syntax highlighting
   {
     "nvim-treesitter/nvim-treesitter",
