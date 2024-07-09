@@ -2,7 +2,12 @@
 
 <div align="center">
 
-Modified version of: [NvChad](https://github.com/NvChad/NvChad)
+## All my dotfiles
+- Kity config
+- Nvim config
+- Fsh
+- Yazi
+- Yabai
 </div>
 
 ----
